@@ -1,11 +1,60 @@
-<div align="center">
+# gurel.dev
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+**My personal website for information and contact**
 
-  <h1>Built with AI Studio</h2>
+A portfolio and personal website built with Google AI Studio and Gemini, showcasing projects, skills, and ways to get in touch.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 About
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+This repository contains the source code for my personal website. It serves as a central hub for:
+- Portfolio and project showcases
+- Professional information
+- Contact and social links
+- Blog/articles (if applicable)
 
-</div>
+## 🛠️ Built With
+
+- [Google AI Studio](https://aistudio.google.com/) - Rapid development with Gemini
+- Gemini API for intelligent features
+
+## 📋 Features
+
+- Responsive design
+- Fast and optimized performance
+- Easy-to-update content
+- Contact information
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (if applicable)
+- Git
+
+### Installation
+
+```bash
+git clone https://github.com/gurelbs/gurel.dev.git
+cd gurel.dev
+```
+
+### Development
+
+```bash
+# Install dependencies (if applicable)
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE) - feel free to check the LICENSE file for details.
+
+## 📧 Contact
+
+For inquiries, please visit [gurel.dev](https://gurel.dev) or reach out through my social links.
+
+---
+
+Built with ❤️ using AI Studio and Gemini
