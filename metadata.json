@@ -1,0 +1,6 @@
+{
+  "name": "Gurel Ben Shabat Portfolio",
+  "description": "Professional portfolio and system dashboard for Gurel Ben Shabat, Embedded Software Engineer & Full-Stack Developer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
