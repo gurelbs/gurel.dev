@@ -95,14 +95,14 @@ export default function SkillsPanel() {
             <button
               key={btn.id}
               onClick={() => setFilter(btn.id as any)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium border transition cursor-pointer select-none outline-none ${
+              className={`flex items-center gap-2.5 px-5 py-3 rounded-full text-xs sm:text-sm font-bold border transition cursor-pointer select-none outline-none ${
                 isActive
                   ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-md shadow-cyan-500/10'
                   : 'bg-slate-900 text-slate-400 border-slate-800 hover:text-white hover:border-slate-700'
               }`}
               id={`filter-btn-${btn.id}`}
             >
-              <BtnIcon className="w-3.5 h-3.5" />
+              <BtnIcon className="w-4 h-4" />
               <span>{btn.label}</span>
             </button>
           );
@@ -128,18 +128,18 @@ export default function SkillsPanel() {
               id={`skill-card-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className="flex items-start justify-between">
-                <span className="text-xs sm:text-sm font-semibold text-slate-100 group-hover:text-cyan-400 transition-colors">
+                <span className="text-sm sm:text-base font-bold text-slate-100 group-hover:text-cyan-400 transition-colors leading-tight">
                   {skill.name}
                 </span>
-                <span className="p-1.5 bg-slate-800/50 rounded-xl border border-slate-700/20">
+                <span className="p-2 bg-slate-800/50 rounded-xl border border-slate-700/20 flex-shrink-0">
                   {getCategorizedIcon(skill.category)}
                 </span>
               </div>
-              <div className="flex items-center justify-between">
-                <span className={`text-[9px] px-2 py-0.5 rounded-full font-mono font-medium border uppercase tracking-wider ${getLevelColor(skill.level)}`}>
+              <div className="flex items-center justify-between gap-1">
+                <span className={`text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full font-mono font-bold border uppercase tracking-wider ${getLevelColor(skill.level)}`}>
                   {skill.level}
                 </span>
-                <span className="text-[10px] text-slate-550 font-mono capitalize">
+                <span className="text-[11px] text-slate-400 font-mono font-medium capitalize truncate">
                   {skill.category.replace('-', ' ')}
                 </span>
               </div>

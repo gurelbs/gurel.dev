@@ -166,7 +166,7 @@ export default function ContactForm() {
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4" key="contact-form" id="actual-html-contact-form">
-            <h3 className="text-base sm:text-lg font-bold font-sans text-slate-100 pb-1 mb-1">
+            <h3 className="text-lg sm:text-xl font-extrabold font-sans text-slate-100 pb-1 mb-1 shadow-none">
               Secure Communications Port
             </h3>
             
@@ -180,8 +180,8 @@ export default function ContactForm() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Full Name */}
               <div className="space-y-1.5" id="input-group-name">
-                <label className="text-xs font-semibold tracking-wider text-slate-450 uppercase flex items-center gap-1.5 font-mono">
-                  <User className="w-3 h-3 text-slate-500" /> NAME
+                <label className="text-xs sm:text-sm font-bold tracking-wider text-slate-400 uppercase flex items-center gap-1.5 font-mono">
+                  <User className="w-4 h-4 text-slate-500" /> NAME
                 </label>
                 <input
                   type="text"
@@ -189,7 +189,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleInputChange}
                   onBlur={handleBlur}
-                  className={`w-full bg-slate-950/60 border rounded-2xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
+                  className={`w-full bg-slate-950/60 border rounded-2xl px-4 py-3 text-sm font-medium text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
                     touched.name && errors.name ? 'border-red-500/70' : 'border-slate-800/80 focus:shadow-md focus:shadow-cyan-500/5'
                   }`}
                   placeholder="Gurel Ben Shabat"
@@ -202,8 +202,8 @@ export default function ContactForm() {
 
               {/* Email Address */}
               <div className="space-y-1.5" id="input-group-email">
-                <label className="text-xs font-semibold tracking-wider text-slate-450 uppercase flex items-center gap-1.5 font-mono">
-                  <Mail className="w-3 h-3 text-slate-500" /> EMAIL PORT
+                <label className="text-xs sm:text-sm font-bold tracking-wider text-slate-400 uppercase flex items-center gap-1.5 font-mono">
+                  <Mail className="w-4 h-4 text-slate-500" /> EMAIL PORT
                 </label>
                 <input
                   type="email"
@@ -211,7 +211,7 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleInputChange}
                   onBlur={handleBlur}
-                  className={`w-full bg-slate-950/60 border rounded-2xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
+                  className={`w-full bg-slate-950/60 border rounded-2xl px-4 py-3 text-sm font-medium text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
                     touched.email && errors.email ? 'border-red-500/70' : 'border-slate-800/80 focus:shadow-md focus:shadow-cyan-500/5'
                   }`}
                   placeholder="name@domain.com"
@@ -225,14 +225,14 @@ export default function ContactForm() {
 
             {/* Subject */}
             <div className="space-y-1.5" id="input-group-subject">
-              <label className="text-xs font-semibold tracking-wider text-slate-450 uppercase font-mono">SUBJECT / PACKET HEADER</label>
+              <label className="text-xs sm:text-sm font-bold tracking-wider text-slate-400 uppercase font-mono">SUBJECT / PACKET HEADER</label>
               <input
                 type="text"
                 name="subject"
                 value={formData.subject}
                 onChange={handleInputChange}
                 onBlur={handleBlur}
-                className={`w-full bg-slate-950/60 border rounded-2xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
+                className={`w-full bg-slate-950/60 border rounded-2xl px-4 py-3 text-sm font-medium text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
                   touched.subject && errors.subject ? 'border-red-500/70' : 'border-slate-800/80 focus:shadow-md focus:shadow-cyan-500/5'
                 }`}
                 placeholder="Software Engineering Collaboration"
@@ -245,14 +245,14 @@ export default function ContactForm() {
 
             {/* Message payload */}
             <div className="space-y-1.5" id="input-group-message">
-              <label className="text-xs font-semibold tracking-wider text-slate-450 uppercase font-mono">MESSAGE PAYLOAD</label>
+              <label className="text-xs sm:text-sm font-bold tracking-wider text-slate-400 uppercase font-mono">MESSAGE PAYLOAD</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
                 onBlur={handleBlur}
                 rows={4}
-                className={`w-full bg-slate-950/60 border rounded-2xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
+                className={`w-full bg-slate-950/60 border rounded-2xl px-4 py-3 text-sm font-medium text-white focus:outline-none focus:border-cyan-500 transition font-mono ${
                   touched.message && errors.message ? 'border-red-500/70' : 'border-slate-800/80 focus:shadow-md focus:shadow-cyan-500/5'
                 }`}
                 placeholder="Type your system query or message here..."
@@ -267,7 +267,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs uppercase tracking-widest shadow-xl shadow-cyan-900/25 transition select-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed outline-none"
+              className="w-full flex items-center justify-center gap-2 px-5 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs sm:text-sm uppercase tracking-widest shadow-xl shadow-cyan-900/25 transition select-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed outline-none"
               id="contact-submit-btn"
             >
               {isSubmitting ? (
